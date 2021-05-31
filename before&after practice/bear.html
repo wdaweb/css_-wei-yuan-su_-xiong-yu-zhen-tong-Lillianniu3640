@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊本熊</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC';
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bearbody {
+            width: 300px;
+            height: 300px;
+            background: black;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .bearbody::before {
+            content: '';
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            background: black;
+            border-radius: 50%;
+            left: 10%;
+        }
+
+        .bearbody::after {
+            content: '';
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            background: black;
+            border-radius: 50%;
+            right: 10%;
+        }
+
+        .lefteye {
+            width: 65px;
+            height: 65px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+        }
+
+        .lefteye::before {
+            content: '';
+            width: 45px;
+            height: 45px;
+            background: black;
+            position: absolute;
+            border-radius: 50%;
+            top: 15%;
+            left: 15%;
+        }
+
+        .lefteye::after {
+            content: '';
+            width: 38px;
+            height: 38px;
+            background: white;
+            position: absolute;
+            border-radius: 50%;
+            top: -80%;
+            left: -32%;
+        }
+
+        .righteye {
+            width: 65px;
+            height: 65px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 20%;
+            right: 20%;
+        }
+
+        .righteye::before {
+            content: '';
+            width: 45px;
+            height: 45px;
+            background: black;
+            position: absolute;
+            border-radius: 50%;
+            top: 15%;
+            right: 15%;
+        }
+
+        .righteye::after {
+            content: '';
+            width: 38px;
+            height: 38px;
+            background: white;
+            position: absolute;
+            border-radius: 50%;
+            top: -80%;
+            right: -32%;
+            z-index: 1;
+        }
+
+        .center {
+            width: 110px;
+            height: 80px;
+            background: white;
+            position: absolute;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -45%);
+        }
+
+        .center::before {
+            content: '';
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            background: red;
+            border-radius: 50%;
+            left: -100%;
+        }
+
+        .center::after {
+            content: '';
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            background: red;
+            border-radius: 50%;
+            right: -100%;
+        }
+
+        .mouth {
+            width: 65px;
+            height: 28px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 5%);
+        }
+
+        .mouth::before {
+            content: '';
+            width: 25px;
+            height: 18px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            top: -110%;
+            left: 30%;
+        }
+
+        .v {
+            width: 120px;
+            height: 0;
+            border-top: 40px solid white;
+            border-left: 38px solid transparent;
+            border-right: 38px solid transparent;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 200%);
+            position: absolute;
+        }
+
+        .v::before {
+            content: '';
+            border-top: 25px solid black;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            top: -40px;
+            left: -2px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bearbody">
+        <div class="lefteye"></div>
+        <div class="righteye"></div>
+        <div class="center"></div>
+        <div class="mouth"></div>
+        <div class="v"></div>
+    </div>
+
+</body>
+
+</html>

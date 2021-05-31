@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>針筒</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC';
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* position: absolute; */
+        }
+
+        .main {
+            width: 52px;
+            height: 120px;
+            background: black;
+            position: relative;
+        }
+
+        .left {
+            width: 220px;
+            height: 122px;
+            background: linear-gradient(180deg, white 0%, lightgray 60%, white 100%);
+            border: 1px solid rgb(148, 148, 148);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-111%, -50%);
+        }
+
+        .left::before {
+            content: '';
+            width: 60px;
+            height: 80px;
+            background: linear-gradient(180deg, white 0%, lightgray 60%, white 100%);
+            border: 1px solid rgb(148, 148, 148);
+            border-radius: 3px;
+            position: absolute;
+            top: 17%;
+            left: -63px;
+        }
+
+        .left::after {
+            content: '';
+            width: 50px;
+            height: 110px;
+            background: linear-gradient(180deg, white 0%, lightgray 60%, white 100%);
+            border: 1px solid rgb(148, 148, 148);
+            border-radius: 10%;
+            position: absolute;
+            top: 5%;
+            left: -113px;
+        }
+
+
+        .right {
+            width: 220px;
+            height: 122px;
+            background: linear-gradient(180deg, rgb(238, 238, 177) 0%, rgb(201, 201, 118) 60%, rgb(238, 238, 177) 100%);
+            border: 1px solid rgb(148, 148, 148);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(11%, -50%);
+
+        }
+
+        .right2 {
+            width: 63px;
+            height: 80px;
+            background: linear-gradient(180deg, white 0%, lightgray 60%, white 100%);
+            border: 1px solid rgb(148, 148, 148);
+            border-radius: 10px;
+            position: absolute;
+            top: 17%;
+            right: -270px;
+            z-index: -1;
+        }
+
+        .right2::before {
+            content: '';
+            width: 100px;
+            height: 0px;
+            background: white;
+            border: 1px solid gray;
+            position: absolute;
+            top: 50%;
+            left: 60px;
+        }
+
+        .left span {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color: rgb(173, 173, 173);
+            position: absolute;
+            top: 80%;
+        }
+
+        .left p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(173, 173, 173);
+            font-size: 24px;
+            position: absolute;
+            top: -5%;
+            left: 3%;
+            letter-spacing: 10px;
+        }
+
+        .right p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(173, 173, 173);
+            font-size: 24px;
+            position: absolute;
+            top: -5%;
+            left: 3%;
+            letter-spacing: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <p>lllllllllllll</p>
+            <span>Made in Taiwan</span>
+        </div>
+        <div class="right">
+            <p>lllllllllllll</p>
+        </div>
+        <div class="right2"></div>
+
+    </div>
+
+
+
+</body>
+
+</html>
